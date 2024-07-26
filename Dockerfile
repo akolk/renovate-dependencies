@@ -2,6 +2,6 @@ FROM node:latest@sha256:86915971d2ce1548842315fcce7cda0da59319a4dab6b9fc0827e762
 
 WORKDIR /app
 COPY package.json .
-RUN npm install
+RUN npm install -g
 
 CMD ["sleep", "infinity"]
