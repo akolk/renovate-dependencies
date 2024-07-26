@@ -1,0 +1,8 @@
+{
+  "version": "0.16.8",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "renovate": "38.7.1"
+  }
+}
