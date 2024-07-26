@@ -3,6 +3,6 @@ module.exports = {
     "gitAuthor": "Renovate Bot <renovate-bot@yourhost.com>",
     "platform": "gitea",
     "onboardingConfigFileName": "renovate.json",
-    "autodiscover": true,
+    "autodiscover": false,
     "optimizeForDisabled": true,
 };
