@@ -20,7 +20,7 @@ for line in lines:
                 # print dependency
                 try:
                     if len(dep['updates']) > 0:
-                       print("        - "+dep['depName']+" "+dep['currentVersion']+" "+ dep['updates'][0]['bucket'] + " " + dep['updates'][0]['newVersion'])
+                       print("        - "+dep['depName']+" "+dep['currentVersion']+" "+ dep['updates'][0]['updateType'] + " " + dep['updates'][0]['newVersion'])
                     else:
                        print("        - "+dep['depName']+" "+dep['currentVersion'])
                 except:
