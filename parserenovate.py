@@ -1,4 +1,13 @@
 import json
+import sys
+
+
+if len(sys.argv) != 4:
+    sys.exit("python3 parserenovate.py orgid repoid reponame")
+    
+orgid = int(sys.argv[1])
+repoid = int(sys.argv[2])
+reponame = sys.argv[3]
 
 with open(file='logfile', mode='r') as f:
     lines = f.readlines()
