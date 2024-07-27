@@ -1,6 +1,6 @@
 import json
 import sys
-
+import csv
 
 if len(sys.argv) != 4:
     sys.exit("python3 parserenovate.py orgid repoid reponame")
@@ -25,11 +25,12 @@ for line in lines:
             print("    - manager: "+manager)
             deplst = obj['config'][manager][0]['deps']
             for dep in deplst:
+                updates = dep['updates']
                 # print(dep)
                 # print dependency
                 try:
-                    if len(dep['updates']) > 0:
-                       print("        - "+dep['depName']+" "+dep['currentVersion']+" "+ dep['updates'][0]['updateType'] + " " + dep['updates'][0]['newVersion'])
+                    if len(updates) > 0:
+                       print("        - "+dep['depName']+" "+dep['currentVersion']+" "+ updates[0]['updateType'] + " " + updates[0]['newVersion'])
                     else:
                        print("        - "+dep['depName']+" "+dep['currentVersion'])
                 except:
