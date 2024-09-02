@@ -3,6 +3,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "renovate": "38.63.0"
+    "renovate": "38.64.0"
   }
 }
