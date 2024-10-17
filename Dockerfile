@@ -1,4 +1,4 @@
-FROM node:latest@sha256:7cd3e5023ff80beedbc3bf45ab898d4d95939bdb484477b9e73ec816d18f2f88
+FROM node:latest@sha256:12eceafc86e04862a24f9cdbbdbada57fc36644bdc7e0f643e6767866cedeb1c
 
 RUN apt-get update && \
     apt-get install -y python3-pandas
